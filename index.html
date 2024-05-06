@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Password Verification</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Verification</h1>
+        <form id="passwordForm" onsubmit="validatePassword(event)">
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <br>
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" required>
+            <br>
+            <button type="submit">Submit</button>
+            <p id="message"></p>
+        </form>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
